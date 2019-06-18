@@ -1,0 +1,16 @@
+{
+  "license": "MIT",
+  "scripts": {
+    "scan-channel": "ts-node ./src/index.ts"
+  },
+  "dependencies": {
+    "@radar/lnrpc": "https://github.com/wbobeirne/lnrpc.git#0.7-beta-rc1",
+    "dotenv": "8.0.0",
+    "ts-node": "8.2.0",
+    "typescript": "3.5.1"
+  },
+  "devDependencies": {
+    "@types/dotenv": "6.1.1",
+    "@types/secp256k1": "3.5.0"
+  }
+}
