@@ -1,9 +1,10 @@
-import { scanNode } from './scan';
+import { scanChannel } from './scan';
 
-const pubkey = process.argv[2];
-if (pubkey) {
-  scanNode(pubkey);
+const myChannelId = process.argv[2];
+const scanChannelId = process.argv[3];
+
+if (myChannelId && scanChannelId) {
+  scanChannel(myChannelId, scanChannelId);
 } else {
-  console.error('Requires pubkey as first and only argument');
-  process.exit(1);
+  console.error('Missing arguments, should be "scan-channel [mychannelid] [scanchannelid]"');
 }

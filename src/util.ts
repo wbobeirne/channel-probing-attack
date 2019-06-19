@@ -19,3 +19,10 @@ export function initNode() {
 export function makeRandomHash() {
   return crypto.randomBytes(32).toString('hex');
 }
+
+// Logs only if we have a flag set
+export function debugLog(...args: any) {
+  if (process.env.DEBUG) {
+    console.debug('[DEBUG]', ...args);
+  }
+}

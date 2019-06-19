@@ -1,5 +1,8 @@
 {
+  "name": "channel-probing-attack",
+  "version": "0.0.1",
   "license": "MIT",
+  "main": "src/index.ts",
   "scripts": {
     "scan-channel": "ts-node ./src/index.ts"
   },
