@@ -59,12 +59,8 @@ You should try to choose a channel that you have a larger `local_balance` than t
 
 ## Make it Better
 
-Implement a command that, given a node's pubkey you have a channel open with, scans all of the channels connected to that node. Try to run as much as possible in parallel, and try to improve the scan's binary search algorithm.
+Implement a command that, given a node's pubkey you have a channel open with, scans all of the channels connected to that node. Also try to improve the scan's binary search algorithm to get through the scans faster.
 
 A couple of hints:
-* [node.getNodeInfo](https://api.lightning.community/#getnodeinfo) comes back with a `channels` array as of LND v0.7.0-beta-rc1, much easier to deal with than `node.describeGraph`.
+* [GetNodeInfo](https://api.lightning.community/#getnodeinfo) comes back with a `channels` array as of LND v0.7.0-beta-rc1, much easier to deal with than `node.describeGraph`.
 * What are the most common states for a channel's balance to be in? 🤔
-
-```
-node.listChannels
-```
