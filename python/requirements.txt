@@ -1,0 +1,4 @@
+googleapis-common-protos==1.5.9
+grpcio==1.19.0
+grpcio-tools==1.19.0
+python-dotenv==0.10.1

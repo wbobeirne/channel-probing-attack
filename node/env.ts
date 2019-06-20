@@ -2,7 +2,6 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 const env = {
-  COIN_TYPE: process.env.COIN_TYPE as string || 'bitcoin',
   LND_GRPC_URL: process.env.LND_GRPC_URL as string,
   LND_MACAROON: process.env.LND_MACAROON as string,
   LND_TLS_CERT: process.env.LND_TLS_CERT as string,
