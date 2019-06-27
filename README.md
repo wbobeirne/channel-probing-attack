@@ -2,7 +2,7 @@
 
 This repo has a quick minimal implementation of a channel probing attack. Given a node M that you control, you can determine the balance between any two nodes A and B that you have a channel open with A.
 
-For context on channel probing attacks, please read https://eprint.iacr.org/2019/328.pdf or read the slides in this repo.
+For context on channel probing attacks, please read https://eprint.iacr.org/2019/328.pdf or [read the slides associated with this project](https://docs.google.com/presentation/d/1_Xmga_mHYqO0jOmXXA30nd38UI12T5okbJOnf8YU6Uw/edit?usp=sharing).
 
 ## Setup
 
